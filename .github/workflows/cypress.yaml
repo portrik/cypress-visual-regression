@@ -1,0 +1,67 @@
+name: Cypress
+
+on:
+  push:
+    paths-ignore:
+      - "presentation/**"
+
+jobs:
+  lint-and-build:
+    name: Lint & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Check Types
+        run: pnpm typescript
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Build
+        run: pnpm build
+
+  visual-regression:
+    name: Visual Regression
+    runs-on: ubuntu-latest
+    needs: lint-and-build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
+
+      - name: Test
+        run: pnpm test:visual-regression
+
+      - name: Archive Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshots
+          path: ./cypress/snapshot
+

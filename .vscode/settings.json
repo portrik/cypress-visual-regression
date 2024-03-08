@@ -1,0 +1,11 @@
+{
+    "conventionalCommits.scopes": [
+        "website",
+        "docker",
+        "cypress",
+        "ci",
+        "readme",
+        "general"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

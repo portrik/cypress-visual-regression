@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: justify;
+    font-smooth: always;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+
+    padding: 2.5rem;
+}

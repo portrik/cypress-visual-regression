@@ -1,0 +1,12 @@
+version: "3.8"
+name: cypress-visual-regression
+services:
+  regression:
+    extends:
+      file: ./common.compose.yaml
+      service: base-service
+
+    entrypoint: ["pnpm", "docker:regression"]
+
+volumes:
+  node-modules:
