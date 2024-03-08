@@ -6,7 +6,7 @@ The presentation used during the talk can be found in the `presentation` directo
 
 The recording of the talk will be added here once it is available online.
 
-## Proof-of-Concepts
+## Proof-of-Concept
 
 The project is a pretty typical TypesScript/React/Vite project to showcase the visual regression testing. I have tried to keep it as simple as possible, maybe except for the ESLint configuration. I was only curious to see how "hardcore" the hardcore configuration can really be.
 

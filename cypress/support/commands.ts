@@ -8,7 +8,6 @@ export function addCaptureElementCommand(): void {
   Cypress.Commands.add(
     "captureElement",
     { prevSubject: "element" },
-    // eslint-disable-next-line max-statements
     (subject, name, options) => {
       const elementHeight = subject.innerHeight() ?? 0;
       const viewportHeight = Cypress.config("viewportHeight");
@@ -17,7 +16,6 @@ export function addCaptureElementCommand(): void {
         errorThreshold: 0.01,
       };
 
-      cy.log(String(elementHeight));
       assert(elementHeight > 0, "The element has no height is 0!");
 
       let position = viewportHeight;
