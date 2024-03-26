@@ -1,94 +1,110 @@
 .word-art-wave {
-    font-family: Arial, sans-serif;
-    font-size: 8em;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 1.5);
-    -moz-transform: scale(1, 1.5);
-    -o-transform: scale(1, 1.5);
-    -ms-transform: scale(1, 1.5);
-    background: red;
-    background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-    background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-    background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-    background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 8em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: scale(1, 1.5);
+  -webkit-transform: scale(1, 1.5);
+  -moz-transform: scale(1, 1.5);
+  -o-transform: scale(1, 1.5);
+  -ms-transform: scale(1, 1.5);
+  background: red;
+  background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-    text-shadow: 3px 3px 0 #b306a9, 6px 6px 0 #ffa509, 9px 9px #55ac2f, 12px 12px 0 #0b13fd;
-    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  text-shadow:
+    3px 3px 0 #b306a9,
+    6px 6px 0 #ffa509,
+    9px 9px #55ac2f,
+    12px 12px 0 #0b13fd;
+  animation:
+    shadows 1.2s ease-in infinite,
+    move 1.2s ease-in infinite;
 
-    text-transform: uppercase;
-    text-align: center;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @keyframes shadows {
-    0% {
-      text-shadow: none;
-    }
-    10% {
-      text-shadow: 3px 3px 0 #b306a9;
-    }
-    20% {
-      text-shadow: 3px 3px 0 #b306a9,
-        6px 6px 0 #ffa509;
-    }
-    30% {
-      text-shadow: 3px 3px 0 #b306a9,
-        6px 6px 0 #ffa509, 9px 9px #55ac2f;
-    }
-    40% {
-      text-shadow: 3px 3px 0 #b306a9,
-        6px 6px 0 #ffa509, 9px 9px #55ac2f,
-        12px 12px 0 #0b13fd;
-    }
-    50% {
-      text-shadow: 3px 3px 0 #b306a9,
-        6px 6px 0 #ffa509, 9px 9px #55ac2f,
-        12px 12px 0 #0b13fd;
-    }
-    60% {
-      text-shadow: 3px 3px 0 #b306a9,
-        6px 6px 0 #ffa509, 9px 9px #55ac2f,
-        12px 12px 0 #0b13fd;
-    }
-    70% {
-      text-shadow: 3px 3px 0 #b306a9,
-        6px 6px 0 #ffa509, 9px 9px #55ac2f;
-    }
-    80% {
-      text-shadow: 3px 3px 0 #b306a9,
-        6px 6px 0 #ffa509;
-    }
-    90% {
-      text-shadow: 3px 3px 0 #b306a9;
-    }
-    100% {
-      text-shadow: none;
-    }
+  0% {
+    text-shadow: none;
   }
-
-  @keyframes move {
-    0% {
-      transform: translate(0px, 0px);
-    }
-    40% {
-      transform: translate(-12px, -12px);
-    }
-    50% {
-      transform: translate(-12px, -12px);
-    }
-    60% {
-      transform: translate(-12px, -12px);
-    }
-    100% {
-      transform: translate(0px, 0px);
-    }
+  10% {
+    text-shadow: 3px 3px 0 #b306a9;
   }
+  20% {
+    text-shadow:
+      3px 3px 0 #b306a9,
+      6px 6px 0 #ffa509;
+  }
+  30% {
+    text-shadow:
+      3px 3px 0 #b306a9,
+      6px 6px 0 #ffa509,
+      9px 9px #55ac2f;
+  }
+  40% {
+    text-shadow:
+      3px 3px 0 #b306a9,
+      6px 6px 0 #ffa509,
+      9px 9px #55ac2f,
+      12px 12px 0 #0b13fd;
+  }
+  50% {
+    text-shadow:
+      3px 3px 0 #b306a9,
+      6px 6px 0 #ffa509,
+      9px 9px #55ac2f,
+      12px 12px 0 #0b13fd;
+  }
+  60% {
+    text-shadow:
+      3px 3px 0 #b306a9,
+      6px 6px 0 #ffa509,
+      9px 9px #55ac2f,
+      12px 12px 0 #0b13fd;
+  }
+  70% {
+    text-shadow:
+      3px 3px 0 #b306a9,
+      6px 6px 0 #ffa509,
+      9px 9px #55ac2f;
+  }
+  80% {
+    text-shadow:
+      3px 3px 0 #b306a9,
+      6px 6px 0 #ffa509;
+  }
+  90% {
+    text-shadow: 3px 3px 0 #b306a9;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
 
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

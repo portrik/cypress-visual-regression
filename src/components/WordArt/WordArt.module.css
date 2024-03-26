@@ -1,5 +1,4 @@
 .word-art {
-  font-family: Impact, sans-serif;
   color: #24c0fd;
   filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa, Strength=1);
   font-size: 4em;
@@ -13,5 +12,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-    transform: scaleY(1.5deg) rotate(-3deg) skewX(-6deg);
+  transform: scaleY(1.5deg) rotate(-3deg) skewX(-6deg);
 }

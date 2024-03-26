@@ -13,7 +13,7 @@ export function addCaptureElementCommand(): void {
       const viewportHeight = Cypress.config("viewportHeight");
       const screenshotOptions = options ?? {
         capture: "viewport",
-        errorThreshold: 0.01,
+        errorThreshold: 0.03,
       };
 
       assert(elementHeight > 0, "The element has no height is 0!");

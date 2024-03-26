@@ -55,8 +55,11 @@ jobs:
         with:
           version: latest
 
+      - name: Install Dependencies
+        run: pnpm install
+
       - name: Test
-        run: pnpm test:visual-regression
+        run: pnpm docker:regression
 
       - name: Archive Artifacts
         uses: actions/upload-artifact@v4
