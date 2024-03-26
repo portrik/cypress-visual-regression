@@ -5,7 +5,8 @@
         "cypress",
         "ci",
         "readme",
-        "general"
+        "general",
+        "presentation"
     ],
     "typescript.tsdk": "node_modules/typescript/lib"
 }
